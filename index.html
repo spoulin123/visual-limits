@@ -1,1 +1,15 @@
 <h1>Visual Limits</h1>
+
+<canvas id="vlcanvas" width="1000" height="500" style="border:1px solid #000000;">
+</canvas>
+
+<script type="text/javascript">
+  var canvas = document.getElementById("vlcanvas");
+  var context = canvas.getContext("2d");
+  context.beginPath();
+  for (x = 0, x < 500, x++) {
+    context.rect(x, 200, 300, 200)
+    context.stroke()
+  }
+
+</script>
